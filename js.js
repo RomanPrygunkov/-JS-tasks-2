@@ -1,6 +1,6 @@
-function getSumOfNumbers(number, type) { 
+function getSumOfNumbers(number, type = "odd") { 
     let total = 0
-  
+    
     for (let i = 0; i <= number; i += 1) { 
         if (type === "odd" && i % 2 ) {                // нечётные
              total += i 
@@ -18,4 +18,4 @@ function getSumOfNumbers(number, type) {
     return console.log(total);
 }
 
-getSumOfNumbers (10, "");
+getSumOfNumbers (10, "even");
